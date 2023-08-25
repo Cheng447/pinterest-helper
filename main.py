@@ -1,5 +1,6 @@
 import tkinter as tk
 from tkinter import filedialog
+import typing
 import os
 import requests
 import time
@@ -14,12 +15,6 @@ service = Service(executable_path="path")
 options = webdriver.EdgeOptions()
 driver = webdriver.Edge(service=service,options=options,keep_alive=True)
 driver.get("https://www.pinterest.co.kr/")
-WebDriverWait(driver,10).until(
-    lambda x: x.find_element(By.CLASS_NAME,'tBJ dyH iFc sAJ xnr tg7 H2s')
-)
-
-login.send_keys(Keys.RETURN)
-
 
 class pinterest_helper(tk.Tk):
     def __init__(self):
@@ -44,19 +39,33 @@ class pinterest_helper(tk.Tk):
         self.sv2=tk.StringVar()
         self.sv2.set(self.sn)
 
+        self.label1=tk.Label(self,text='account',fg='#a3a7cc',bg='#1e191c',font=('Arial',10,'bold'))
+        self.label1.place(x=70,y=35)
+        
+        self.label2=tk.Label(self,text='password',fg='#a3a7cc',bg='#1e191c',font=('Arial',10,'bold'))
+        self.label2.place(x=66,y=60)
+        
+        self.entry1=tk.Entry(self,width=25)
+        self.entry1.place(x=135,y=35)
+
+        self.entry2=tk.Entry(self,width=25)
+        self.entry2.place(x=135,y=60)
+
+        self.login_botton=tk.Button(self,text='login',bd=3,command=self.login)
+        self.login_botton.place(x=192,y=87)
+
         self.entry3=tk.Entry(self,width=25,textvariable=self.sv)
-        self.entry3.pack(pady=(60,0))
+        self.entry3.place(x=125,y=120)
 
         self.open_button=tk.Button(self, text="open file",command=self.open_file_manager,bd=3)
-        self.open_button.pack(pady=15)
+        self.open_button.place(x=185,y=150)
 
         self.entry4=tk.Entry(self,width=25,textvariable=self.sv2)
-        self.entry4.pack()
+        self.entry4.place(x=125,y=190)
 
         self.download_button=tk.Button(self,text="download",bd=3,command=self.download)
-        self.download_button.pack(pady=15)
+        self.download_button.place(x=185,y=220)
 
-        
     def open_file_manager(self):
         selected_path = filedialog.askdirectory()
         if selected_path:
@@ -68,7 +77,17 @@ class pinterest_helper(tk.Tk):
         search.send_keys(Keys.RETURN)
 
     def login(self):
-        ...
+        search=driver.find_element(By.XPATH,'//button[@type="button"]')
+        time.sleep(2)
+        search.send_keys(Keys.RETURN)
+        account=self.entry1.get()
+        password=self.entry2.get()
+        account_login= driver.find_element(By.XPATH,'//input[@id="email"]')
+        password_login= driver.find_element(By.XPATH,'//input[@id="password"]')
+        account_login.send_keys(f'{account}')
+        password_login.send_keys(f'{password}')
+        login_button=driver.find_element(By.XPATH,'//button[@type="submit"]')
+        login_button.send_keys(Keys.RETURN)
 
 ph=pinterest_helper()
 
