@@ -19,6 +19,8 @@ driver.get("https://www.pinterest.co.kr/")
 class pinterest_helper(tk.Tk):
     def __init__(self):
 
+        self.picture:list[str]=[] 
+
         super().__init__()
 
         '''
@@ -72,9 +74,9 @@ class pinterest_helper(tk.Tk):
             self.sv.set(f"{selected_path}")
 
     def download(self):
-        tag=self.entry2.get()
-        search=driver.find_element(By.XPATH,'searchBoxInput//*[@id="searchBoxContainer"]/div/div/div[2]/input')
-        search.send_keys(Keys.RETURN)
+        teb=self.entry4.get()
+        search=driver.find_element(By.XPATH,'//input[@type="text"]')
+        search.send_keys(f'{teb}')
 
     def login(self):
         search=driver.find_element(By.XPATH,'//button[@type="button"]')
