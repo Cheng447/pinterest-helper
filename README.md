@@ -20,5 +20,7 @@
   ![螢幕擷取畫面 2024-05-17 154431](https://github.com/cjenf/Pinterest-Downloader/assets/105590093/12713904-89c1-46a4-8031-c3bb80797700)
   
   __account__ -> 輸入你的pinterest帳戶<br>
-  __password__ -> 輸入你的pinterest密碼
-  
+  __password__ -> 輸入你的pinterest密碼<br>
+  __enter your path__ -> 選擇你想存放的資料夾<br>
+  __Enter what you want to search__ -> 輸入你想搜尋圖片的名稱<br>
+  __pictures(s)__ -> 輸入你想下載的數量<br?
