@@ -5,5 +5,9 @@
    $ python3 -m pip install --upgrade -r requirements.txt   
    ```
 ### 使用方式:
-   
+- 在終端機執行以下程式碼
+  ```py
+  python main.py
+  ```
+  ![](https://imgur.com/fjJloA7)
    
