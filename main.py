@@ -66,8 +66,7 @@ class pinterest_helper(tk.Tk):
 
         self.swipes=tk.Label(self,text='picture(s)',fg='#a3a7cc',bg='#1e191c',font=('Arial',10,'bold'))
         self.swipes.place(x=68,y=260)
-
-    
+        
         self.entry5=tk.Entry(self,width=25)
         self.entry5.place(x=130,y=260)
 
