@@ -18,5 +18,6 @@
 - 按照以下步驟依序打入框內
   
   ![螢幕擷取畫面 2024-05-17 154431](https://github.com/cjenf/Pinterest-Downloader/assets/105590093/12713904-89c1-46a4-8031-c3bb80797700)
+  
   ==account==
    
