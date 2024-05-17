@@ -25,10 +25,6 @@ class pinterest_helper(tk.Tk):
 
         super().__init__()
 
-        '''
-        GUI settings
-        '''
-
         self.title('pinterest_helper(for download picture)')
         self.geometry("400x300+700+300")
         self.iconbitmap('download_icon_128877.ico')
@@ -70,11 +66,12 @@ class pinterest_helper(tk.Tk):
         self.download_button=tk.Button(self,text="download",bd=3,command=self.download)
         self.download_button.place(x=185,y=220)
 
-        self.swipes=tk.Label(self,text='Swipes',fg='#a3a7cc',bg='#1e191c',font=('Arial',10,'bold'))
+        self.swipes=tk.Label(self,text='picture(s)',fg='#a3a7cc',bg='#1e191c',font=('Arial',10,'bold'))
         self.swipes.place(x=68,y=260)
 
+    
         self.entry5=tk.Entry(self,width=25)
-        self.entry5.place(x=125,y=260)
+        self.entry5.place(x=130,y=260)
 
     def open_file_manager(self):
         selected_path = filedialog.askdirectory()
@@ -84,20 +81,20 @@ class pinterest_helper(tk.Tk):
     def download(self):
         count=0
         teb=self.entry4.get()
-        search=driver.find_element(By.XPATH,'//input[@type="text"]')
+        search=driver.find_element(By.XPATH,'//input[@type="text"]') 
         search.send_keys(f'{teb}')
         search.send_keys(Keys.RETURN)
         WebDriverWait(driver,2).until(
             EC.presence_of_all_elements_located((By.XPATH,'//img[@class="hCL kVc L4E MIw"]'))
         )
-        for _ in range(0,int(self.entry5.get())):
+        for _ in range(0,10):
             driver.execute_script("window.scrollTo(0,document.body.scrollHeight);")
             time.sleep(1)
         images=driver.find_elements(By.XPATH,'//img[@class="hCL kVc L4E MIw"]')
         path=self.entry3.get()
         os.mkdir(f'{path}/{self.entry4.get()}')
         
-        for image in images:
+        for image in images[0:int(self.entry5.get())]:
             sava_as=os.path.join(f"{path}/{self.entry4.get()}",teb+str(count)+'.jpg')
             wget.download(image.get_attribute("src"),sava_as)
             count+=1
