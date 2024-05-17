@@ -10,4 +10,6 @@
   python main.py
   ```
   ![螢幕擷取畫面 2024-05-17 153237](https://github.com/cjenf/Pinterest-Downloader/assets/105590093/61baae4e-aab3-48a9-9706-77050135b6a1)
+- 等待介面加載完成
+     
    
