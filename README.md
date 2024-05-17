@@ -17,7 +17,7 @@
   
 - 按照以下步驟依序打入框內
   
-  ![螢幕擷取畫面 2024-05-17 161137](https://github.com/cjenf/Pinterest-Downloader/assets/105590093/6ce9d97d-b7b0-4f9c-a768-d441d3f216c0)
+  ![螢幕擷取畫面 2024-05-17 161234](https://github.com/cjenf/Pinterest-Downloader/assets/105590093/806236b8-9489-40d6-ab77-040661e90f4d)
   > 步驟:
      - __account__ ⮕ 輸入你的pinterest帳戶<br>
      - __password__ ⮕ 輸入你的pinterest密碼<br>
