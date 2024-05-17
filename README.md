@@ -9,5 +9,5 @@
   ```py
   python main.py
   ```
-  ![螢幕擷取畫面 2024-05-17 152230](https://github.com/cjenf/Pinterest-Downloader/assets/105590093/f5a1b68d-991d-4061-9e79-92daa6ac8054)
+  ![螢幕擷取畫面 2024-05-17 153237](https://github.com/cjenf/Pinterest-Downloader/assets/105590093/61baae4e-aab3-48a9-9706-77050135b6a1)
    
