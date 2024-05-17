@@ -1,8 +1,6 @@
 import tkinter as tk
 from tkinter import filedialog
-import typing
 import os
-import requests
 import wget
 import time
 from selenium import webdriver
