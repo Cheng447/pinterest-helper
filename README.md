@@ -27,5 +27,5 @@
      - __pictures(s)__ ⮕ 輸入你想下載的數量<br>
      - **全部都輸入完就按下download**<br>
 ### 範例輸出:
-
+![螢幕擷取畫面 2024-05-17 161454](https://github.com/cjenf/Pinterest-Downloader/assets/105590093/e339701b-f418-4b59-b57c-e10cbc19161e)
    
