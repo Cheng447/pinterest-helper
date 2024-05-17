@@ -9,5 +9,5 @@
   ```py
   python main.py
   ```
-  ![](https://imgur.com/fjJloA7=15x10)
+  ![螢幕擷取畫面 2024-05-17 152230](https://github.com/cjenf/Pinterest-Downloader/assets/105590093/f5a1b68d-991d-4061-9e79-92daa6ac8054)
    
