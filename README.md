@@ -1,5 +1,5 @@
 # Pinterest-Downloader
-**這是一個使用簡單、操作便捷的[Pinterest](https://www.pinterest.co.kr) 圖片下載器，讓你輕鬆下載和保存Pinterest上的圖片。**
+**這是一個使用簡單、操作便捷的[Pinterest](https://www.pinterest.co.kr)圖片下載器，讓你輕鬆下載和保存Pinterest上的圖片。**
 ### 需求條件:
    ```py
    $ python3 -m pip install --upgrade -r requirements.txt   
@@ -27,5 +27,6 @@
      - __pictures(s)__ ⮕ 輸入你想下載的數量<br>
      - **全部都輸入完就按下download**<br>
 ### 範例輸出:
-![螢幕擷取畫面 2024-05-17 161454](https://github.com/cjenf/Pinterest-Downloader/assets/105590093/e339701b-f418-4b59-b57c-e10cbc19161e)
+![螢幕擷取畫面 2024-05-17 161454](https://github.com/cjenf/Pinterest-Downloader/assets/105590093/e339701b-f418-4b59-b57c-e10cbc19161e)<br>
+**※註:沒有[Pinterest](https://www.pinterest.co.kr)帳號到[這邊](https://www.pinterest.com/)註冊**
    
