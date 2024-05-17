@@ -9,5 +9,5 @@
   ```py
   python main.py
   ```
-  ![](https://imgur.com/fjJloA7)
+  ![](https://imgur.com/fjJloA7=15x10)
    
