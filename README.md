@@ -26,4 +26,6 @@
      - __Enter what you want to search__ ⮕ 輸入你想搜尋圖片的名稱<br>
      - __pictures(s)__ ⮕ 輸入你想下載的數量<br>
      - **全部都輸入完就按下download**<br>
+### 範例輸出:
+
    
